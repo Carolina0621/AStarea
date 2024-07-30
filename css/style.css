@@ -5,20 +5,20 @@
 }
 
 @font-face {
-    font-family: tipografia;
-    src: url(Formula1-Wide.ttf);
+    font-family: 'NintendoFont';
+    src: url('NintendoFont.ttf');
 }
 
 body {
-    background-color: rgba(163, 163, 163, 0.858);
+    background-color: #f5f5f5;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
 header {
-    background-color: rgba(25, 24, 24, 0.858);
-    color: beige;
+    background-color: #e60012;
+    color: white;
     padding: 20px 0;
     margin-bottom: 20px;
 }
@@ -32,8 +32,8 @@ header .container {
 }
 
 header h1 {
-    font-family: tipografia;
-    font-size: 2em;
+    font-family: 'NintendoFont', sans-serif;
+    font-size: 2.5em;
 }
 
 header nav ul {
@@ -47,12 +47,13 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: beige;
+    color: white;
+    font-size: 1.2em;
     transition: color 0.3s;
 }
 
 header nav ul li a:hover {
-    color: rgb(238, 136, 136);
+    color: #ffcc00;
 }
 
 main {
@@ -61,26 +62,27 @@ main {
 }
 
 .clase {
-    background-color: rgba(71, 70, 70, 0.646);
+    background-color: white;
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.2s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .clase:hover {
     transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
 }
 
 .clase h2 {
     margin-bottom: 10px;
-    font-size: 1.5em;
-    color: #fff;
+    font-size: 2em;
+    color: #e60012;
 }
 
 .clase p {
-    color: #ddd;
+    color: #555;
 }
 
 #img1 {
@@ -89,20 +91,16 @@ main {
     display: block;
     margin: 20px auto;
     border-radius: 50%;
+    animation: spin 4s infinite linear;
 }
 
-.barra1, .barra2, .barra3 {
-    display: inline-block;
-    width: 70vw;
-    height: 5px;
-    border-radius: 10px;
-    background-color: rgb(238, 136, 136);
-    vertical-align: middle;
-    margin: 10px 0;
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 #boton {
-    background-color: rgba(11, 220, 21, 0.646);
+    background-color: #0073e6;
     padding: 15px;
     width: 96%;
     justify-content: center;
@@ -113,11 +111,12 @@ main {
     color: #fff;
     font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #boton:hover {
-    background-color: rgba(11, 180, 21, 0.646);
+    background-color: #005bb5;
+    transform: scale(1.05);
 }
 
 input {
@@ -125,13 +124,19 @@ input {
     width: 99%;
     padding: 10px;
     margin: 10px 0;
-    border: 0;
+    border: 1px solid #ccc;
     display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 footer {
-    background-color: rgba(25, 24, 24, 0.858);
-    color: beige;
+    background-color: #e60012;
+    color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
@@ -143,7 +148,7 @@ footer .container {
 }
 
 footer a {
-    color: rgb(238, 136, 136);
+    color: #ffcc00;
     text-decoration: none;
     transition: color 0.3s;
 }
