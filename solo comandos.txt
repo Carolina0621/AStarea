@@ -1,0 +1,24 @@
+Clonar el Repositorio Forkeado a Tu Computadora
+git clone https://github.com/REM2016/AStarea.git
+cd AStarea
+
+Agregar el Repositorio Original como Remoto
+git remote add upstream https://github.com/Carolina0621/AStarea.git
+git remote -v
+
+Hacer Cambios y Subirlos a Tu Repositorio Forkeado
+Realiza tus cambios en el código, luego:
+git add .
+git commit -m "Descripción de los cambios realizados"
+git push origin main
+
+
+Mantener tu Fork Actualizado con el Repositorio Original
+git fetch upstream
+git checkout main
+git merge upstream/main
+
+Si hay conflictos durante el merge, resuélvelos manualmente. Una vez resueltos, continúa con:
+git add .
+git commit -m "Resuelto conflicto durante merge con upstream/main"
+git push origin main
