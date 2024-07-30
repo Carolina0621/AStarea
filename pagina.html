@@ -1,74 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web</title>
+    <title>Mario Bros - Sitio Oficial</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Mi Sitio Web</h1>
+            <h1>Mario Bros</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="pagina.html">Inicio</a></li>
                     <li><a href="#about">Acerca de</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#games">Juegos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="clase">
-            <h2>Bienvenido a mi página</h2>
-            <p>Este es un ejemplo de contenido en una sección de tu sitio web. Puedes agregar más secciones similares para crear tu diseño.</p>
-            <img id="img1" src="img/temas-para-una-pagina-web-1200x685.jpg" alt="Descripción de la imagen">
-            <div class="barra1"></div>
-            <div class="barra2"></div>
-            <div class="barra3"></div>
+        <section id="home" class="clase">
+            <h2>Bienvenido a la página oficial de Mario Bros</h2>
+            <p>Descubre todo sobre el mundo de Mario, sus amigos y sus aventuras.</p>
+            <img id="img1" src="img/hongo.png" alt="Mario Bros">
             <button id="boton">Haz clic aquí</button>
             <input type="text" placeholder="Escribe algo...">
         </section>
 
-        <section class="clase">
+        <section id="about" class="clase">
             <h2>Nuestra Historia</h2>
-            <p>Descripción de la historia de tu empresa o proyecto.</p>
+            <p>Conoce la historia de Mario Bros y su evolución a través del tiempo.</p>
         </section>
 
-        <section class="clase">
-            <h2>Nuestros Servicios</h2>
-            <p>Descripción de los servicios que ofreces.</p>
-        </section>
-        
-
-
-        hola 
-        <!-- Proyectos recientes -->
-        <section class="clase">
-            <h2>Contacto</h2>
-            <div>
-                <label>Nombre:</label>
-                <input type="text" name="nombre">
-            </div>
-            <div>
-                <label>Email:</label>
-                <input type="email" name="email">
-            </div>
-            <div>
-                <label>Mensaje:</label>
-                <textarea name="mensaje"></textarea>
-            </div>
-            <button id="boton" type="button">Enviar</button>
+        <section id="games" class="clase">
+            <h2>Nuestros Juegos</h2>
+            <p>Explora la variedad de juegos disponibles en la franquicia de Mario Bros.</p>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-            <p>Diseñado por <a href="#">Tu Nombre</a></p>
+            <p>&copy; 2024 Mario Bros. Todos los derechos reservados.</p>
+            <p>Diseñado por <a href="#">Nintendo</a></p>
         </div>
     </footer>
 </body>
